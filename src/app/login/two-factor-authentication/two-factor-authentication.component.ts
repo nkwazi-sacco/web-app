@@ -7,14 +7,19 @@ import { finalize } from 'rxjs/operators';
 
 /** Custom Services */
 import { AuthenticationService } from '../../core/authentication/authentication.service';
+import { MatDividerModule } from '@angular/material/divider';
 
 /**
  * Two factor authentication component.
  */
 @Component({
-  selector: 'nova-two-factor-authentication',
+  selector: 'mifosx-two-factor-authentication',
   templateUrl: './two-factor-authentication.component.html',
-  styleUrls: ['./two-factor-authentication.component.scss']
+  styleUrls: ['./two-factor-authentication.component.scss'],
+  imports: [
+    MatDividerModule,
+    // your existing imports
+  ],
 })
 export class TwoFactorAuthenticationComponent implements OnInit {
 
